@@ -13,6 +13,13 @@ export default [
   pluginReact.configs.flat.all,
   eslintPluginPrettierRecommended,
   {
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
+  },
+  {
     rules: {
       'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
       'react/jsx-indent': 'off',
